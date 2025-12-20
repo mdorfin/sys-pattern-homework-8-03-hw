@@ -24,54 +24,34 @@
 
 ### Задание 1
 
-`Приведите ответ в свободной форме........`
+Одним запросом получите информацию о магазине, в котором обслуживается более 300 покупателей, и выведите в результат следующую информацию:
 
-1. 
-  ```bash
-  docker run --name mysql-container \
-    -e MYSQL_ROOT_PASSWORD=root \
-    -e MYSQL_DATABASE=db \
-    -e MYSQL_USER=user \
-    -e MYSQL_PASSWORD=user \
-    -p 3306:3306 \
-    -d mysql:latest
-  ```
-2. 
-<img src="img/1_2.png">
+1. фамилия и имя сотрудника из этого магазина;
+2. город нахождения магазина;
+3. количество пользователей, закреплённых в этом магазине.
 
-3. 
-<img src="img/1_3.png">
-
-4. 
-<img src="img/1_4.png">
-
-5.
-<img src="img/1_5.png">
-
-6. 
-<img src="img/diag.png">
-
-
----
+<img src="img/hw-1.png">
 
 ### Задание 2
 
-```
-table         | primary key
------------------------------------------
-actor         | actor_id
-address       | address_id
-category      | category_id
-city          | city_id
-country       | country_id
-customer      | customer_id
-film          | film_id
-film_actor    | actor_id, film_id
-film_category | film_id, category_id
-film_text     | film_id
-inventory     | inventory_id
-language      | language_id
-payment       | payment_id
-rental        | rental_id
-staff         | staff_id
-store         | store_id
+Получите количество фильмов, продолжительность которых больше средней продолжительности всех фильмов.
+
+<img src="img/hw-2.png">
+
+### Задание 3
+
+Получите информацию, за какой месяц была получена наибольшая сумма платежей, и добавьте информацию по количеству аренд за этот месяц.
+
+<img src="img/hw-3.png">
+
+### Задание 4
+
+Посчитайте количество продаж, выполненных каждым продавцом. Добавьте вычисляемую колонку «Премия». Если количество продаж превышает 8000, то значение в колонке будет «Да», иначе должно быть значение «Нет».
+
+<img src="img/hw-4.png">
+
+### Задание 5
+
+Найдите фильмы, которые ни разу не брали в аренду.
+
+<img src="img/hw-5.png">
